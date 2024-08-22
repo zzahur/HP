@@ -1,0 +1,132 @@
+/* Import a sans-serif font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Container for the carousel */
+.carousel-container {
+    height:280px;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better appearance */
+    background: url('https://i.imgur.com/9LZoEHl.jpeg') no-repeat center center; /* Background image URL */
+    background-color: transparent; /* No color affecting the background */
+    opacity: 1; /* Full opacity */
+    background-size: cover; /* Cover the entire container */
+}
+
+/* Carousel itself */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+/* Individual card styling */
+.carousel-card {
+    min-height:280px;
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background for cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for cards */
+}
+
+/* Week number styling */
+.week-number {
+    font-family: 'Roboto', sans-serif; /* Sans-serif font */
+    font-weight: bold;
+    font-size: 1.5em; /* Larger font size for visibility */
+    margin-bottom: 10px;
+}
+
+/* Container for week days */
+.week-days-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping */
+    gap: 10px; /* Space between the text areas */
+    margin-bottom: 10px; /* Space between days and Saturday */
+}
+
+/* Styling for Monday to Friday text areas */
+.weekday {
+    flex: 1 1 calc(20% - 10px); /* Flex basis to fit within the container */
+    min-height: 50px; /* Minimum height to ensure visibility */
+    resize: none; /* Prevent resizing */
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Soft color for better differentiation */
+    color: #333; /* Text color */
+    font-family: 'Roboto', sans-serif; /* Sans-serif font */
+    font-size: 1em; /* Font size */
+}
+
+/* Alternate soft colors for differentiation */
+.weekday:nth-child(1) {
+    background-color: #e8f4f8; /* Light blue */
+}
+
+.weekday:nth-child(2) {
+    background-color: #f0f9f4; /* Light green */
+}
+
+.weekday:nth-child(3) {
+    background-color: #fef9e8; /* Light yellow */
+}
+
+.weekday:nth-child(4) {
+    background-color: #f8e8e8; /* Light red */
+}
+
+.weekday:nth-child(5) {
+    background-color: #f5e8f8; /* Light purple */
+}
+
+/* Container for Saturday */
+.saturday-container {
+    display: flex;
+    justify-content: center; /* Center Saturday box */
+}
+
+/* Styling for Saturday text area */
+.saturday {
+    width: calc(100% - 10px); /* Full width in its row */
+    min-height: 50px; /* Minimum height to ensure visibility */
+    resize: none; /* Prevent resizing */
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f0f0f0; /* Soft background color */
+    color: #333; /* Text color */
+    font-family: 'Roboto', sans-serif; /* Sans-serif font */
+    font-size: 1em; /* Font size */
+}
+
+/* Navigation buttons styling */
+#prevBtn, #nextBtn {
+    position: absolute;
+    bottom: 10px; /* Positioned below the cards */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10; /* Ensure buttons are above other elements */
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
