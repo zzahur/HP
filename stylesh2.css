@@ -10,7 +10,7 @@
     position: relative;
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better appearance */
-    background: url('FallBG.png') no-repeat center center; /* Background image URL */
+    background: url('SpringBG.png') no-repeat center center; /* Background image URL */
     background-color: transparent; /* No color affecting the background */
     opacity: 1; /* Full opacity */
     background-size: cover; /* Cover the entire container */
