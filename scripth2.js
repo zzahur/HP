@@ -2,7 +2,7 @@ const SPREADSHEET_ID = '1zKveXKoxYhx09GEC8dBB_J3W8wamuoBl7ihffGZriKs'; // Replac
 const API_KEY = 'AIzaSyADN4_k5AalrLi8mxUBnilqy4uxfJnWjPc'; // Replace with your actual API Key
 const RANGE = 'Sheet2!A1:T6'; // Adjust this range based on your data
 
-const STARTING_WEEK = 18; // Specify the starting week (e.g., Week 5)
+const STARTING_WEEK = 19; // Specify the starting week (e.g., Week 5)
 const TOTAL_WEEKS = 20; // Total number of weeks
 
 async function fetchData() {
